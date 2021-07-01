@@ -1,4 +1,4 @@
-# Quasar, Vue,Apollo,GraphQL,MongoDB App (quasar-auth-apollo)
+# Quasar, Vue,Apollo,GraphQL,MongoDB App (quasar-template is a skeleton for your app)
 
 A Quasar Framework app and Apollo with GraphQL SPA template
 
