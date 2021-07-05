@@ -3,7 +3,6 @@ const app = require('express')(),
   express = require('express'),
   fileUpload = require('express-fileupload'),
   cors = require('cors'),
-  bodyParser = require('body-parser'),
   morgan = require('morgan'),
   path = require('path'),
   { ApolloServer, AuthenticationError } = require('apollo-server-express'),
@@ -105,8 +104,6 @@ const contextAuthError = (req, res, next) => {
 // add other middleware
 app.use(express.static('uploads'))
 app.use(cors())
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: true }))
 app.use('/api', contextAuthError)// add 401 error code
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'index.html'))
